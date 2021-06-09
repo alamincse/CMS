@@ -1,0 +1,58 @@
+/*
+Theme Name  : CMS
+Theme URI   : http://alamin.hitCoder.com
+Author	    : AL-AMIN
+Author URI  : http://alamin.hitCoder.com
+Description : Group Project
+Styleshed   : admin section
+Version	    : 1.0
+*/
+body {
+  font-family: 'Noto Serif', 'Noto Sans', "Helvetica Neue", Helvetica, sans-serif;
+}
+body .content {
+  margin-top: 50px;
+  min-height: 550px;
+}
+body .login {
+  margin-top: 50px;
+  min-height: 350px;
+}
+body .login .admin-login-page h2.admin {
+  padding-left: 10px;
+  font-family: Georgia;
+}
+body .login .admin-login-page a:hover {
+  text-decoration: none;
+}
+body .login .admin-login-page input[type=checkbox] + span {
+  color: #111;
+  font-style: italic;
+}
+body .login .admin-login-page input[type=checkbox]:checked + span {
+  color: #000;
+  font-style: normal;
+}
+body #reply-msg {
+  display: none;
+}
+body .content ul.widgets-menu {
+  margin: 20px 0 10px 0;
+  list-style: none;
+}
+body .content ul.widgets-menu li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+body .content ul.widgets-menu li a:hover {
+  text-decoration: none;
+}
+body .content input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+body .content input[type="text"]:hover {
+  cursor: inherit;
+}

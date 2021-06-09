@@ -1,0 +1,32 @@
+<li class="comment-holder" id="_{$comment['comments_id']}">
+	<div class="user-img">
+		{html_image file="{$base_url}/subscribers/{$comment['userId']}/{$comment['profile_img']}" class="user-img-pic"}
+	</div><!--  .user-img -->
+
+	<div class="comment-body">
+		<h3 class="username-field">
+			{$comment['comments_name']}
+			
+			<span class="cmt-time"><i>On {{$comment['comments_date']}|date_format:"%B %d, %Y at %I: %M %p"}</i></span>
+			{if $u_id == $comment['userId']}
+				<span class="cmt-edit" id="{$comment['comments_id']}">&nbsp;|&nbsp;Edit</span>
+			{/if}
+
+			{if $u_id}
+				<span class="cmt-reply" id="{$comment['comments_id']}"><a href="{$base_url}/single.php?id={$data['post_id']}&amp;article={$data['post_title']}&replytocom={$comment['comments_id']}#respond">Reply</a></span>
+			{/if}
+		</h3><!-- .username-field  -->
+
+		<div class="comment-text">
+			{$comment['comments_content']}
+		</div><!-- .comment-text  -->
+	</div><!-- .comment-body  -->
+
+	{if $u_id == $comment['userId']}
+		<div class="comment-buttons-holder">
+			<ul>
+				<li class="delete-btn" id="{$comment['comments_id']}">X</li>
+			</ul>
+		</div><!--  .comment-buttons-hoder -->
+	{/if}
+</li><!--  .comment-holder #_1 -->
